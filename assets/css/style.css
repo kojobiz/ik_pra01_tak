@@ -57,6 +57,116 @@ header {
     margin-right:2rem;
     flex-direction:column;
     align-items:flex-end;
-    gap:1.4rem;
-    
+    gap:1.4rem;  
+}
+.l-header__navi {
+  display:flex;
+  line-height:1;
+}
+.l-header__menu {
+  display:flex;
+  gap:0 1.8rem;
+  align-items:center;
+  list-style:none;
+}
+.l-header__menu a {
+  display: inline-flex;
+  gap: 0 0.5rem;
+  align-items: center;
+}
+.l-header__menu--phone {
+  display:flex;
+  gap:1.5rem;
+  align-items:center;
+}
+.l-header__menu--phone a {
+  color: #4090ed;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.l-header__menu--phone .description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.l-header__menu.menu-02 {
+  gap: 0;
+  font-size: 1.8rem;
+}
+.l-header__menu.menu-02 > li {
+  display: flex;
+  align-items: center;
+}
+.l-header__menu.menu-02 > li + li::before {
+  content: "";
+  width: 1px;
+  height: 1.2em;
+  margin: 0 2rem;
+  display: inline-block;
+  background-color: #ccc;
+}
+.l-header__menu.menu-02--toggle {
+  display: none;
+}
+.l-header__menu--parent {
+  margin-bottom: -3em;
+  padding-bottom: 3em;
+}
+.l-header__mega-menu {
+  width: 100%;
+  padding-top: 3.2rem;
+  padding-right: calc(var(--padding-size, 1.6rem) * 3);
+  padding-bottom: 3.2rem;
+  padding-left: calc(var(--padding-size, 1.6rem) * 3);
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.l-header__mega-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.l-header__mega-menu .c-heading__01 {
+  margin-right: 4rem;
+  flex: none;
+  font-size: 3.4rem;
+  line-height: 1.2;
+}
+.l-header__mega-menu .c-heading__01::before {
+  font-size: 1.7rem;
+}
+.l-header__mega-menu .c-heading__01::after {
+  width: 12.2rem;
+  height: 0.8rem;
+  margin-top: 1.5rem;
+}
+.l-header__mega-menu--image {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1/0.628;
+}
+.l-header__mega-menu--image img {
+  transition: transform 0.3s;
+}
+.l-header__mega-menu--list {
+  display: flex;
+  gap: 3.6rem 1.8rem;
+  flex-wrap: wrap;
+}
+.l-header__mega-menu--list li {
+  width: 18rem;
+}
+.l-header__mega-menu--list a {
+  display: block;
+  color: #4090ed;
+}
+.l-header__mega-menu--list p {
+  margin-top: 0.7rem;
 }

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+:root {
+  --base-font-color: #333;
+  --bg-color: #e2e2e2;
+  --main-width: 120.0rem;
+  --primary-color: #4090ED;
+
+  /* スペーサー */
+  --margin-size: 1.6rem;
+  --padding-size: 1.6rem;
+}
