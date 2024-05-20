@@ -1,0 +1,62 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden !important;
+  background-color: #fff;
+  color: var(--base-font-color, #000);
+  word-break: break-all;
+  letter-spacing: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  .position-absolute {
+    position: absolute;
+  }
+  .position-fixed {
+    position: fixed;
+  }
+  
+.l-header {
+    width:100%;
+    font-weight:500;
+}
+header {
+    display:block;
+}
+.l-header__inner {
+    display:flex;
+    align:center;
+}
+.l-header__title {
+    margin-left:2.6rem;
+    margin-right:2rem;
+    flex:1;
+    lign-height:1;
+}
+.l-header__navi--wrapper {
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+}
+.l-header .navi-01 {
+    margin-right:2rem;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:1.4rem;
+    
+}
